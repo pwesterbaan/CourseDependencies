@@ -8,7 +8,8 @@
 \pagestyle{fancy}
 \fancyhf{}
 \lhead{
-  \tikz[baseline=-0.75ex]{\draw[arrow](0,0) -- (1,0);}\ Prerequisite}
+  \tikz[baseline=-0.75ex]{\draw[arrow](0,0) -- (1,0);}\ Prerequisite\\
+  Modified: \today}
 \chead{\huge \textbf{MTHSC Course Dependencies}}
 \rhead{\vspace*{-20pt}
   \tikz{\node[class, double]{Breadth Course};}\\
@@ -75,7 +76,7 @@
     %--------------------------------------------------------------------------
     %Statistics
     \node (9010) [class] at (0,  -6) {9010};
-    \node (8000) [class, double] at (3, -6) {8000};
+    \node (8000) [class] at (3, -6) {8000};
     \node (8040) [class, double] at (4, -6) {\underline{8040}};
     \node (9020) [class] at (0,  -7) {9020};
     \node (8050) [class, double] at (1.5, -7) {8050};
@@ -140,7 +141,7 @@
       \node (compG)     [subject, fit=(8600) (8650) (8610)] {};
       \node (orG)       [subject, fit=(8160) (9880) (stochastics)] {};
       %% Dashed line separating OR and Stochastics
-      \draw [dashed, shorten >=-15pt, shorten <=-15pt] (7.5, -8) -- (7.5, -10);
+      \draw [dashed, shorten >=-12.5pt, shorten <=-12.5pt] (7.5, -8) -- (7.5, -10);
     \end{scope}
     %--------------------------------------------------------------------------
     % Dependencies
